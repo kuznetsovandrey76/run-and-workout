@@ -1,0 +1,41 @@
+table {
+	margin: 1em auto;
+	font-family: 'Rubik', sans-serif;
+}
+.day,
+.month td,
+.week td
+/*.day-of-the-week */
+{
+	font-size: 10px;
+	border: none;
+	text-align: center;
+} 
+td {
+	width: 15px;
+	height: 15px;
+	border: 1px dotted black;
+	font-size: 10px;
+	text-align: center;
+}
+.day6, 
+.day7 {
+	background-color: #cce698;
+}
+.day-of-the-week td:active {
+	box-shadow: 1px 1px 1px gray;
+}
+td.day, 
+td.day:hover {
+	background-color: white;
+	box-shadow: none;
+}
+.ok {
+	background-color: #ffcc80;
+}
+.week44 {
+	border: 1px solid green;
+}
+.current {
+	background-color: lightgreen;
+}
