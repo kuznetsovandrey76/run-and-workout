@@ -1,38 +1,96 @@
-table {
-	margin: 1em auto;
-	font-family: 'Rubik', sans-serif;
+* {
+	margin: 0;
+	padding: 0; 
 }
-.day,
-.month td,
-.week td
-/*.day-of-the-week */
-{
-	font-size: 10px;
-	border: none;
+ol {
+	display: inline-block; 
+	list-style: none;
+}
+
+/********** Autumn **********/
+ol:nth-child(n+2) {
+	background: rgba(246, 200, 123, .2); 
+}
+ol:nth-child(n+2) li {
+	border: 2px solid rgb(225, 107, 83); 
+}
+
+/********** Winter **********/
+ol:nth-child(n+10) {
+	background: rgb(247, 248, 252);	}
+ol:nth-child(n+10) li{
+	border: 2px solid rgb(125, 188, 223) ; 
+}
+
+/********** Spring **********/
+ol:nth-child(n+23) {
+	background: rgba(237, 191, 208, .2); 
+}
+ol:nth-child(n+23) li {
+	border: 2px solid rgb(186, 140, 174); 
+}
+
+/********** Summer **********/
+ol:nth-child(n+36) {
+	background: rgba(197, 210, 175, .2); 
+}
+ol:nth-child(n+36) li{
+	border: 2px solid rgb(60, 106, 26); 
+}		
+
+/********** Autumn **********/
+ol:nth-child(n+49) {
+	background: rgba(246, 200, 123, .2); 
+}
+ol:nth-child(n+49) li{
+	border: 2px solid rgb(225, 107, 83); 
+}
+
+li {
+	border: 2px solid;
+	display: table;
+	font-weight: bold; 
+	height: 20px;
+	margin: 5px;
 	text-align: center;
+	width: 20px;
+}
+
+
+li:nth-child(-n+1) {
+	background: white;
+	border: 2px solid white !important; 
+}
+
+/*Стиль субботы и воскресенья*/
+li:nth-child(n+7) {
+	border: 2px solid #670202 !important;
+
+}
+h1 {
+	font-family: 'Nunito', sans-serif;
+}
+
+h1, #test {
+	margin-top: 1em;
+	text-align: center;
+}
+
+/*Убрать стиль у дня недели*/
+#test ol:first-child li{
+	background: white;
+	border: 2px solid white !important;
+}
+
+/* Выравнивание времен года */	
+ol:nth-child(9), 
+ol:nth-child(22),
+ol:nth-child(35), 
+ol:nth-child(48)  {
+	margin-right: .5em;
+	padding-right: 4px;
+}
+
+ol:nth-child(53) {
+	padding-right: 4px;
 } 
-td {
-	width: 15px;
-	height: 15px;
-	border: 1px dotted black;
-	font-size: 10px;
-	text-align: center;
-}
-.day6, 
-.day7 {
-	background-color: #cce698;
-}
-.day-of-the-week td:active {
-	box-shadow: 1px 1px 1px gray;
-}
-td.day, 
-td.day:hover {
-	background-color: white;
-	box-shadow: none;
-}
-.ok {
-	background-color: #ffcc80;
-}
-.current {
-	background-color: lightgreen;
-}
