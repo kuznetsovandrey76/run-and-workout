@@ -82,4 +82,6 @@ for (var i = 0; i < li.length; i++) {
 	}
 }
 
-document.getElementsByTagName('ol')[27].children[7].style.background = 'gold'; // ;)
+(function() {
+	document.getElementsByTagName('ol')[27].children[7].style.background = 'gold'; // ;)
+})();
