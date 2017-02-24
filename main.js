@@ -83,5 +83,5 @@ for (var i = 0; i < li.length; i++) {
 }
 
 (function() {
-	document.getElementsByTagName('ol')[27].children[7].style.background = 'gold'; // ;)
+	document.getElementsByTagName('ol')[35].children[6].style.background = 'gold'; // ;)
 })();
